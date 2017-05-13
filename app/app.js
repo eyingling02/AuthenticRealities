@@ -1,8 +1,3 @@
 $( document ).ready(function() {
-    hideMe();
-    debugger
+    console.log("Still connected");
 });
-
-var hideMe = function() {
-  $("#hideme").hide();
-};

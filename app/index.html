@@ -10,11 +10,13 @@
 		<a-assets>
 			 <a-asset-item id="shoe" src="/assets/models/vans-authentic-shoe-low-poly.dae"></a-asset-item>
 			 <a-asset-item id="house" src="/assets/models/medieval-house-2-dae/medieval-house-2.dae"></a-asset-item>
+			 <a-mixin id="text" text="align: center; width: 6; value: Hello World"></a-mixin>
 		</a-assets>
     <a-marker preset='hiro'>
-			<a-entity>
-				<a-collada-model position="0 0.05 -2.5" rotation="-90 0 0" scale=".01 .01 .01" src="#shoe"></a-collada-model>
-				<a-collada-model id="hideme" position="2.5 0.05 -1" rotation="-90 0 0" scale=".1 .1 .1" src="#house"></a-collada-model>
+			<a-entity rotation="-90 0 0">
+				<a-collada-model position="0 0.05 -2.5" scale=".01 .01 .01" src="#shoe" ></a-collada-model>
+				<a-collada-model position="2.5 0.05 -1" scale=".1 .1 .1" src="#house"></a-collada-model>
+				<a-text id="hidehouse" mixin="text" position="0 1 0" wrap-count="20" color="red"></a-text>
 			</a-entity>
     </a-marker>
 	</a-scene>
