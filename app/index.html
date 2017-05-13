@@ -4,10 +4,12 @@
 	<a-scene embedded artoolkit='sourceType: webcam;'>
 		<a-assets>
 			 <a-asset-item id="shoe" src="/assets/models/vans-authentic-shoe-low-poly.dae"></a-asset-item>
+			 <a-asset-item id="house" src="/assets/models/medieval-house-2-dae/medieval-house-2.dae"></a-asset-item>
 		</a-assets>
     <a-marker preset='hiro'>
 			<a-entity>
-				<a-collada-model position="0 0.05 -5" rotation="-90 0 0" scale=".01 .01 .01" src="#shoe"></a-collada-model>
+				<a-collada-model position="0 0.05 -2.5" rotation="-90 0 0" scale=".01 .01 .01" src="#shoe"></a-collada-model>
+				<a-collada-model position="2.5 0.05 -1" rotation="-90 0 0" scale=".1 .1 .1" src="#house"></a-collada-model>
 			</a-entity>
     </a-marker>
 	</a-scene>
