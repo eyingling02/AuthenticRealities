@@ -13,8 +13,10 @@
 			 <a-mixin id="text" text="align: center; width: 6; value: Hello World"></a-mixin>
 		</a-assets>
     <a-marker preset='hiro'>
-			<a-entity rotation="-90 0 0">
-				<a-collada-model position="0 0.05 -2.5" scale=".01 .01 .01" src="#shoe" ></a-collada-model>
+			<a-entity id="theentity" rotation="-90 0 0">
+				<!-- <div>
+					<a-collada-model id="shoe-model" visible=false position="0 0.05 -2.5" scale=".01 .01 .01" src="#shoe" ></a-collada-model>
+				</div> -->
 				<a-collada-model position="2.5 0.05 -1" scale=".1 .1 .1" src="#house"></a-collada-model>
 				<a-text id="hidehouse" mixin="text" position="0 1 0" wrap-count="20" color="red"></a-text>
 			</a-entity>
