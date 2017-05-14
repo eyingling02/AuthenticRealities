@@ -8,11 +8,12 @@
       src="https://code.jquery.com/jquery-3.2.1.js"
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <a-scene embedded artoolkit='sourceType: webcam;'>
       <a-marker preset='hiro'>
-        <a-entity class="theentity" id="color" position="0 0 0"
+        <a-entity id="assets" position="0 0 0"
                   text="color: red; align: center; value: 0; width: 1.5">
         </a-entity>
 
@@ -21,23 +22,5 @@
         </a-entity>
       </a-marker>
     </a-scene>
-
-    <script>
-
-      var counter = 0;
-      var color = document.getElementById('color');
-      setInterval(function() {
-        if (counter < 35) {
-          if (counter === 12){
-            var entity = $(".theentity");
-            var shoeModel = "<a-collada-model position='0 0.05 -2.5' scale='.01 .01 .01' src='#shoe' ></a-collada-model>";
-            entity.append(shoeModel);
-          }
-        color.setAttribute("text", "color: red; align: center; width: 6; value: "+ counter);
-        counter++;
-        }
-      }, 1000);
-
-    </script>
   </body>
 </html>
