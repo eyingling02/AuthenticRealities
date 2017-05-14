@@ -5,9 +5,9 @@ $( document ).ready(function() {
 
 var yearIncrease = function() {
   var counter = 0;
-  var color = document.getElementById('assets');
+  var color = document.getElementById('timekeeper');
   setInterval(function() {
-    if (counter < 35) {
+    if (counter < 31) {
     color.setAttribute("text", "color: red; align: center; width: 6; value: "+ counter);
     counter++;
     }
