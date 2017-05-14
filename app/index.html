@@ -11,13 +11,16 @@
     <script src="app.js"></script>
   </head>
   <body>
+		<a-assets>
+			 <a-asset-item id="shoe" src="/assets/models/vans-authentic-shoe-low-poly.dae"></a-asset-item>
+		</a-assets>
     <a-scene embedded artoolkit='sourceType: webcam;'>
-      <a-marker preset='hiro'>
-        <a-entity id="assets" position="0 0 0"
-                  text="color: red; align: center; value: 0; width: 1.5">
+			<a-marker preset='hiro'>
+        <a-entity id="assets" position="0 -.15 -1" text="color: red; align: center; value: 0; width: 1.5">
+					<a-collada-model position='0 0.05 -2.5' scale='.01 .01 .01' src='#shoe' ></a-collada-model>
         </a-entity>
 
-        <a-entity position="0 0 2">
+        <a-entity position="0 0 0">
           <a-entity camera look-controls wasd-controls></a-entity>
         </a-entity>
       </a-marker>
