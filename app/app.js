@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    appendHouse();
+    // appendHouse();
     yearIncrease(100000, 12, 15);
 
 });
@@ -38,5 +38,5 @@ var appendHouse = function() {
 var appendAccumulatedWealth = function(accumulatedWealthNumber) {
   console.log("isthis on?")
   var retirementMoney = $("#accumulated-wealth");
-  retirementMoney.replaceWith("<a-entity id='accumulated-wealth' position='0 1 0' scale='2 2 2' rotation='-90 180 180' text='color: purple; align: center; value: 0; width: 1.5'></a-entity>")
+  retirementMoney.replaceWith("<a-entity id='accumulated-wealth' position='0 1 0' scale='2 2 2' rotation='-90 180 180' text='color: purple; align: center; value:" + accumulatedWealthNumber + "; width: 1.5'></a-entity>")
 }
