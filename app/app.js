@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-    // appendHouse();
+    appendHouse();
     yearIncrease(100000, 12, 15);
-    
+
 });
 
 
@@ -36,19 +36,7 @@ var appendHouse = function() {
 }
 
 var appendAccumulatedWealth = function(accumulatedWealthNumber) {
-  // console.log("isthis on?")
-  // var retirementMoney = document.getElementById("accumulated-wealth");
-  // retirementMoney.setAttribute("color", 'blue');
-  // retirementMoney.setAttribute("align", 'center');
-  // retirementMoney.setAttribute("value", accumulatedWealthNumber.toString());
-  // retirementMoney.setAttribute("width", '1.5');
+  console.log("isthis on?")
+  var retirementMoney = $("#accumulated-wealth");
+  retirementMoney.replaceWith("<a-entity id='accumulated-wealth' position='0 1 0' scale='2 2 2' rotation='-90 180 180' text='color: purple; align: center; value: 0; width: 1.5'></a-entity>")
 }
-
-
- // var scene = document.querySelector('a-scene');
- //    var cylinder = document.createElement('a-cylinder');
- //    cylinder.setAttribute('color', '#FF9500');
- //    cylinder.setAttribute('height', '2');
- //    cylinder.setAttribute('radius', '0.75');
- //    cylinder.setAttribute('position', '3 1 0');
- //    scene.appendChild(cylinder);
