@@ -41,9 +41,8 @@ var yearIncrease = function(baseSalary, canBuyHouse, accumulatedWealthNumber, ca
 var appendHouse = function() {
   console.log("isthis on?")
   var house = $("#house-img");
-  house.replaceWith("<a-box src='#home' position='-2 0 -4' width='.75' rotation='-90 180 180'></a-box>")
-   // var retirementBadge = $("#retirement-year");
-  // retirementBadge.replaceWith("<a-circle src='#retirement' position='0 0 -4' radius='.75' rotation='-90 180 180'></a-circle>")
+  house.replaceWith("<a-box src='#home' position='-2 0 -4' 'depth=0' 'height=4' 'width=0.5' rotation='-90 180 180'></a-box>")
+   
 }
 
 var appendAccumulatedWealth = function(accumulatedWealthNumber) {
