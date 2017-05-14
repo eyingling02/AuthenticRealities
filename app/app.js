@@ -1,14 +1,14 @@
 $( document ).ready(function() {
-
     yearIncrease();
+    appendShoe();
 });
 
 var yearIncrease = function() {
   var counter = 0;
-  var text = document.getElementById('assets');
+  var color = document.getElementById('assets');
   setInterval(function() {
-    if (counter < 31) {
-    text.setAttribute("text", "color: red; align: center; width: 6; value: "+ counter);
+    if (counter < 35) {
+    color.setAttribute("text", "color: red; align: center; width: 6; value: "+ counter);
     counter++;
     }
   }, 1000);
