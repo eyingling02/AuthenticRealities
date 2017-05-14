@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     // appendHouse();
 
-    setTimeout(function() { yearIncrease(100000, 7, 8890278, 26) }, 5000);
+    setTimeout(function() { yearIncrease(70000, 12, 4735208, 31) }, 5000);
 });
 
 
