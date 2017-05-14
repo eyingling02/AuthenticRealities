@@ -12,10 +12,12 @@
   </head>
   <body>
 		<a-assets>
+				<img id='retirement' src="/assets/models/home-radio-logo.png">
 			 <a-asset-item id="shoe" src="/assets/models/vans-authentic-shoe-low-poly.dae"></a-asset-item>
 		</a-assets>
     <a-scene embedded artoolkit='sourceType: webcam;'>
 			<a-marker preset='hiro'>
+				<a-circle src="#retirement" position="0 0 -4" radius=".75" rotation="-90 180 180"></a-circle>
         <a-entity id="timekeeper" position="0 0 0" rotation="-90 180 180" text="color: red; align: center; value: 0; width: 1.5">
         </a-entity>
         <a-entity id="assets">
