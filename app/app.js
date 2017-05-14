@@ -1,11 +1,11 @@
 $( document ).ready(function() {
     // appendHouse();
-    yearIncrease(100000, 7, 8890278, 26, "#whitemale");
 
+    setTimeout(function() { yearIncrease(100000, 7, 8890278, 26) }, 5000);
 });
 
 
-var yearIncrease = function(baseSalary, canBuyHouse, accumulatedWealthNumber, canRetire, demographic) {
+var yearIncrease = function(baseSalary, canBuyHouse, accumulatedWealthNumber, canRetire) {
   var counter = 0;
   var year = document.getElementById('timekeeper');
   var salary = document.getElementById('salary');
@@ -19,7 +19,7 @@ var yearIncrease = function(baseSalary, canBuyHouse, accumulatedWealthNumber, ca
       }
       if (counter === 30){
         appendAccumulatedWealth(accumulatedWealthNumber);
-        displayEarnings(demographic);
+        displayEarnings();
       };
     year.setAttribute("text", "color: black; align: center; width: 6; value: Year: "+ counter);
     salary.setAttribute("text", "color: blue; align: center; width: 6; value: Salary: $"+ baseSalary);
@@ -58,8 +58,8 @@ var appendRetirementBadge = function() {
   retirementBadge.replaceWith("<a-circle src='#retirement' position='-2.5 0 -3.7' radius='.70' rotation='-90 180 180'></a-circle>")
 }
 
-var displayEarnings = function(demographic) {
+var displayEarnings = function() {
 
-  var moneyBags = $("#demographic");
-  moneyBags.replaceWith("<a-image src=" + demographic + " position='-3.5 0 -2.7' rotation='-90 180 180'></a-image>")
+  var moneyBags = $("#earnings");
+  moneyBags.replaceWith("<a-image src='#money' position='2.4 0 -3.98' rotation='-90 180 180'></a-image>")
 }
