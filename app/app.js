@@ -1,11 +1,11 @@
 $( document ).ready(function() {
     // appendHouse();
-    yearIncrease(100000, 12);
+    yearIncrease(100000, 12, 15);
     
 });
 
 
-var yearIncrease = function(baseSalary, canBuyHouse) {
+var yearIncrease = function(baseSalary, canBuyHouse, accumulatedWealthNumber) {
   var counter = 0;
   var year = document.getElementById('timekeeper');
   var salary = document.getElementById('salary');
@@ -14,9 +14,9 @@ var yearIncrease = function(baseSalary, canBuyHouse) {
       if (counter === canBuyHouse){
         appendHouse();
       }
-      // if (counter === 30){
-      //   accumulatedWealth
-      // };
+      if (counter === 5){
+        appendAccumulatedWealth(accumulatedWealthNumber);
+      };
     year.setAttribute("text", "color: red; align: center; width: 6; value: Year "+ counter);
     salary.setAttribute("text", "color: red; align: center; width: 6; value: Salary "+ baseSalary);
     counter++;
@@ -35,14 +35,14 @@ var appendHouse = function() {
   entity.appendChild(houseModel);
 }
 
-// var appendAccumulatedWealth = function() {
-//   var entity = document.querySelector("a-entity");
-//   var retirementMoney =  document.createElement('a-collada-model');
-//   houseModel.setAttribute("position", '0 0.1 -3.5');
-//   houseModel.setAttribute("scale", '.005 .005 .005');
-//   houseModel.setAttribute("src", '#house');
-//   entity.appendChild(houseModel);
-// }
+var appendAccumulatedWealth = function(accumulatedWealthNumber) {
+  // console.log("isthis on?")
+  // var retirementMoney = document.getElementById("accumulated-wealth");
+  // retirementMoney.setAttribute("color", 'blue');
+  // retirementMoney.setAttribute("align", 'center');
+  // retirementMoney.setAttribute("value", accumulatedWealthNumber.toString());
+  // retirementMoney.setAttribute("width", '1.5');
+}
 
 
  // var scene = document.querySelector('a-scene');
