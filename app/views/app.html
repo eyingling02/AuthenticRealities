@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Text</title>
+    <meta name="description" content="Text - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="../app.js"></script>
+  </head>
+  <body>
+
+
+
+    <a-scene embedded artoolkit='sourceType: webcam;'>
+
+     <a-assets>
+      <!--  <a-asset-item id="house" src="/assets/models/house.dae"></a-asset-item> -->
+       <img id='retirement' src="/assets/models/home-radio-logo.png">
+       <img id='home' src="/assets/models/home.png">
+       <img id='whitemale' src="/assets/models/wm.png">
+       <img id='latinafemale' src="/assets/models/LW.png">
+       <img id='money' src="/assets/models/moneybag1.png">
+
+       <!-- <a-asset-item id="shoe" src="/assets/models/vans-authentic-shoe-low-poly.dae"></a-asset-item> -->
+     </a-assets>
+
+
+      <a-marker preset='hiro'>
+        <!-- <a-circle src="#retirement" position="0 0 -4" radius=".75" rotation="-90 180 180"></a-circle> -->
+        <a-entity id="timekeeper" position="0 0 -6.0" rotation="-90 180 180" text="color: blue; align: center; value: ; width: 1.5">
+
+        </a-entity>
+
+        <a-entity id="salary" position="0 0 -5.7" rotation="-90 180 180" text="color: green; align: center; value: ; width: 1.5">
+        </a-entity>
+
+        <a-entity id="accumulated-wealth">
+        </a-entity>
+
+        <a-entity id="retirement-year">
+        </a-entity>
+
+        <a-entity id="house-img">
+        </a-entity>
+
+        <a-entity id="earnings">
+        </a-entity>
+
+
+      </a-marker>
+    <!-- "button" -->
+    <!-- <a-entity id="refresh-button" geometry="primitive: box" material="color: purple" position="0 0 -5"></a> -->
+    </a-scene>
+  <!-- "script for button" -->
+  <!-- <script>
+      document.querySelector('#refresh-button').addEventListener('click', function() {
+        window.location.href='/';
+      });
+  </script> -->
+  </body>
+</html>
