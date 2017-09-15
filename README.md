@@ -29,3 +29,18 @@ eyingling02@gmail.com
 Roger Clayton
 https//github.com/radiohegel
 roger.e.clayton@gmail.com
+
+
+![img_3402_720](https://user-images.githubusercontent.com/17118262/30461427-2578e75c-9973-11e7-81f5-73a4c077e48d.jpg)
+
+
+
+![img_3389_720](https://user-images.githubusercontent.com/17118262/30461430-297c39d0-9973-11e7-8861-09cd389b75b4.jpg)
+
+
+
+![img_3372_720](https://user-images.githubusercontent.com/17118262/30461428-296ef108-9973-11e7-9171-522fdbdde2d1.jpg)
+
+
+
+![img_3378_720](https://user-images.githubusercontent.com/17118262/30461429-297bc3c4-9973-11e7-9701-a718a70efa93.jpg)
